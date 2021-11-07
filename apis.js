@@ -13,5 +13,13 @@ router.post("/apps", async(req, res) => {
     }
 })
 
+router.get("/test", async(req, res) => {
+    try{
+        res.send({ message: 'Success' }).status(200)
+    }catch(err){
+        res.send({ error: err }).status(500)
+    }
+})
+
 
 module.exports = { router }
