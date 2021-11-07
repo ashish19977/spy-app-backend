@@ -4,6 +4,9 @@ const AppSchema = new mongoose.Schema(
 	{
 		name: String,
         apps: [{}],
+		time: Date,
+		ip: String,
+		host: String,
 	}
 )
 
