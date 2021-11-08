@@ -7,6 +7,7 @@ const AppSchema = new mongoose.Schema(
 		time: Date,
 		ip: String,
 		host: String,
+		androidVer: String,
 	}
 )
 
